@@ -1,0 +1,11 @@
+float my_sqrt(float);
+float my_abs(float);
+float determinant_2(float mat[2][2]);
+float determinant_3(float mat[3][3]);
+float determinant_4(float mat[4][4]);
+void inv_3_matrix(float mat[3][3], float inv_mat[3][3]);
+void inv_4_matrix(float mat[4][4], float inv_mat[4][4]);
+void print_mat(float mat[4][4]);
+void position_ls(float *distance_list, int num_anchor, float*position_result);
+void positioin_wls(float *distance_list, int num_anchor, float*position_result);
+void positioin_wls_r(float *distance_list, int num_anchor, float *position_reslult);
