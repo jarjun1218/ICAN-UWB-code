@@ -66,6 +66,7 @@
   - `tkinter`
   - `matplotlib`
   - `pyserial`
+  - `serialtool`
 
 ## 📦 安裝與設定
 
