@@ -131,12 +131,21 @@ UWB定位ESP32實作程式/
 char ANCHOR_ADD[] = "A1:00:22:EA:82:60:3B:9C";  // 錨點 A1
 char ANCHOR_ADD[] = "A2:00:22:EA:82:60:3B:9C";  // 錨點 A2
 char ANCHOR_ADD[] = "A3:00:22:EA:82:60:3B:9C";  // 錨點 A3
+.
+.
+.
+char char ANCHOR_ADD[] = "A8:00:22:EA:82:60:3B:9C";  // 錨點 A8
 ```
 
 ### 2. 標籤設定
 1. 將標籤程式燒錄到 UWB 模組
 2. 配置 IMU 感測器連接
 3. 設定錨點座標資訊
+
+```cpp
+char TAG_ADD[] = "B1:00:22:EA:82:60:3B:9C"; // 標籤 A
+char TAG_ADD[] = "B2:00:22:EA:82:60:3B:9C"; // 標籤 B
+```
 
 ### 3. 卡爾曼濾波器
 1. 燒錄 `ESPNOW_transmitter_with_kalman_filter.ino`
@@ -338,3 +347,4 @@ DW1000.useSmartPower(true);                // 智能功率管理
 ---
 
 **注意**: 本系統適用於研究與教育用途，商業使用請確認相關法規要求。
+
